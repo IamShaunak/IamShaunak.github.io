@@ -32,11 +32,11 @@ body {
     font-size: 2rem;
 }
 
-.content {
+/* .content {
     flex: 1;
     padding: 20px;
     background: #fff;
-}
+} */
 
 h2 {
     border-bottom: 2px solid #ddd;
