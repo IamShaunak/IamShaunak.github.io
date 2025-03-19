@@ -11,23 +11,22 @@
             padding: 0;
         }
         .header {
+            position: relative; /* Allows absolute positioning of text */
             width: 100%;
-            display: flex; /* Use flexbox for side-by-side layout */
-            align-items: center; /* Vertically center content */
-            justify-content: space-between; /* Space out left and right */
-            background-color: #fff;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .header-text {
-            text-align: left; /* Align text to the left */
-            flex: 1; /* Take up available space on the left */
+            height: 300px; /* Adjust height as needed */
         }
         .profile {
-            width: 50%; /* Half the width for the image */
-            height: 300px; /* Adjust as needed */
-            object-fit: cover;
-            margin: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Fill the header height */
+            object-fit: cover; /* Ensures image covers without distortion */
+            display: block;
+        }
+        .header-text {
+            position: absolute; /* Overlay text on image */
+            top: 20px; /* Distance from top */
+            left: 20px; /* Distance from left */
+            color: #fff; /* White text for contrast */
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for readability */
         }
         .container {
             max-width: 900px;
@@ -37,7 +36,7 @@
         }
         h1, h2, h3 {
             color: #333;
-            margin: 0; /* Remove default margins */
+            margin: 0;
         }
         h2 {
             border-bottom: 2px solid #333;
@@ -76,13 +75,13 @@
     </style>
 </head>
 <body>
-    <!-- Header with Name on Left and Image on Right -->
+    <!-- Header with Text Overlaid on Full-Width Image -->
     <div class="header">
+        <img src="assets/image.jpeg" alt="Shaunak Yevatekar" class="profile">
         <div class="header-text">
             <h1>Shaunak Yevatekar</h1>
             <p>shaunak@yevatekar.com | Pune, India</p>
         </div>
-        <img src="assets/image.jpeg" alt="Shaunak Yevatekar" class="profile">
     </div>
 
     <!-- Main Content -->
