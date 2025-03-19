@@ -3,91 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <title>Shaunak Yevatekar | Portfolio</title>
-    <link rel="stylesheet" href="style.css"> <!-- Linking your CSS file -->
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .skills-container, .section {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .skill-box, .info-box {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            width: 28%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <img src="assets/image.jpeg" alt="Shaunak Yevatekar" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px;">
+        <!-- Header -->
+        <div>
+            <img src="assets/image.jpeg" alt="Shaunak Yevatekar" class="profile">
             <h1>Shaunak Yevatekar</h1>
-            <p>shaunak@yevatekar.com</p>
-            <p>Pune, India</p>
-            <h2>Primary Skills</h2>
-            <p>Software Development</p>
-            <p>Data Analytics</p>
-            <p>Automation</p>
-            <a href="https://github.com/IamShaunak" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/shaunakyevatekar" target="_blank">LinkedIn</a> <!-- Update with real link -->
+            <p>shaunak@yevatekar.com | Pune, India</p>
         </div>
 
-        <!-- Main Content -->
-        <div class="content">
-            <!-- Projects -->
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="https://github.com/IamShaunak/Object-Locator">Object Locator — (Indian Patent Filed)</a><br>IoT, Web Development (MCU, REST APIs, GSM Module)</li>
-                <li><a href="">Electricity Grid Analysis and Prediction — (Indian Patent Filed)</a><br>IoT, Web Development, Data Science (Electric Sensor Unit, NoSQL DB, XGBoost)</li>
-                <li><a href="">Smart Parking System</a><br>Image Processing (OpenCV, Numpy)</li>
-                <li><a href="">Realtime Price Comparison Of Food Delivery Apps</a><br>Web Scraping (Selenium)</li>
-            </ul>
-
-            <!-- Achievements -->
-            <h2>Achievements</h2>
-            <ul>
-                <li>1st Indian Patent Filed - 28th October 2023</li>
-                <li>2nd Indian Patent Filed - 24th May 2024</li>
-                <li>Live Project Deployed at Maha Metro Headquarters</li>
-                <li>1st Place, Smart India Hackathon, VIT Pune</li>
-                <li>Presented Research Paper at IEEE Sensor Applications Symposium 2023</li>
-            </ul>
-
-            <!-- Experience -->
-            <h2>Experience</h2>
-            <ul>
-                <li>
-                    <strong>Information Technology Intern</strong><br>
-                    Maharashtra Metro Rail Corp Ltd., Pune<br>
-                    July 2024 - Dec 2024<br>
-                    Built a cross-platform mobile app to manage meeting rush at HQ.
-                </li>
-                <li>
-                    <strong>Research and Web Development Intern</strong><br>
-                    DSSWORLD Private Limited, Pune<br>
-                    Dec 2022 - June 2024<br>
-                    Developed and deployed projects using PHP, MySQL, JS.
-                </li>
-            </ul>
-
-            <!-- Education -->
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <strong>B.Tech Instrumentation and Control</strong><br>
-                    Vishwakarma Institute of Technology, Pune<br>
-                    2021 - 2025 | CGPA: 8.37
-                </li>
-                <li>
-                    <strong>HSC - 91.6%</strong><br>
-                    Rao Junior College of Science, Pune<br>
-                    2019 - 2021
-                </li>
-                <li>
-                    <strong>SSC - 89%</strong><br>
-                    New India School Kothrud, Pune<br>
-                    2008 - 2019
-                </li>
-            </ul>
-
-            <!-- Roles & Responsibilities -->
-            <h2>Roles & Responsibilities</h2>
-            <ul>
-                <li>Assistant Cultural Secretary - Viculp, VIT Pune</li>
-                <li>Public Relations Head - IEEE Instrumentation and Measurement Society, VIT Pune</li>
-                <li>Project Lead - International Society of Automation (ISA), VIT Pune</li>
-                <li>Club Head - Viculp, VIT Pune</li>
-            </ul>
+        <!-- Skills -->
+        <h2>Primary Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box"><h3>Software Development</h3></div>
+            <div class="skill-box"><h3>Data Analytics</h3></div>
+            <div class="skill-box"><h3>Automation</h3></div>
         </div>
+
+        <!-- Projects -->
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="https://github.com/IamShaunak/Object-Locator">Object Locator — (Indian Patent Filed)</a><br>IoT, Web Development (MCU, REST APIs, GSM Module)</li>
+            <li><a href="">Electricity Grid Analysis and Prediction — (Indian Patent Filed)</a><br>IoT, Web Development, Data Science (Electric Sensor Unit, NoSQL DB, XGBoost)</li>
+            <li><a href="">Smart Parking System</a><br>Image Processing (OpenCV, Numpy)</li>
+            <li><a href="">Realtime Price Comparison Of Food Delivery Apps</a><br>Web Scraping (Selenium)</li>
+        </ul>
+
+        <!-- Achievements -->
+        <h2>Achievements</h2>
+        <ul>
+            <li>1st Indian Patent Filed - 28th October 2023</li>
+            <li>2nd Indian Patent Filed - 24th May 2024</li>
+            <li>Live Project Deployed at Maha Metro Headquarters</li>
+            <li>1st Place, Smart India Hackathon, VIT Pune</li>
+            <li>Presented Research Paper at IEEE Sensor Applications Symposium 2023</li>
+        </ul>
+
+        <!-- Experience -->
+        <h2>Experience</h2>
+        <div class="section">
+            <div class="info-box">
+                <h3>Information Technology Intern</h3>
+                <p>Maharashtra Metro Rail Corp Ltd.<br>July 2024 - Dec 2024, Pune</p>
+                <p>Built a cross-platform mobile app to manage meeting rush at HQ.</p>
+            </div>
+            <div class="info-box">
+                <h3>Research and Web Development Intern</h3>
+                <p>DSSWORLD Private Limited<br>Dec 2022 - June 2024, Pune</p>
+                <p>Developed and deployed projects using PHP, MySQL, JS.</p>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <h2>Education</h2>
+        <div class="section">
+            <div class="info-box">
+                <h3>B.Tech Instrumentation and Control</h3>
+                <p>Vishwakarma Institute of Technology, Pune<br>2021 - 2025<br>CGPA: 8.37</p>
+            </div>
+            <div class="info-box">
+                <h3>HSC - 91.6%</h3>
+                <p>Rao Junior College of Science, Pune<br>2019 - 2021</p>
+            </div>
+            <div class="info-box">
+                <h3>SSC - 89%</h3>
+                <p>New India School Kothrud, Pune<br>2008 - 2019</p>
+            </div>
+        </div>
+
+        <!-- Roles & Responsibilities -->
+        <h2>Roles & Responsibilities</h2>
+        <ul>
+            <li>Assistant Cultural Secretary - Viculp, VIT Pune</li>
+            <li>Public Relations Head - IEEE Instrumentation and Measurement Society, VIT Pune</li>
+            <li>Project Lead - International Society of Automation (ISA), VIT Pune</li>
+            <li>Club Head - Viculp, VIT Pune</li>
+        </ul>
     </div>
 </body>
 </html>
