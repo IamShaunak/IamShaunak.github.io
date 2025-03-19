@@ -1,88 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Shaunak Yevatekar | Portfolio</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .skills-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .skill-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 25%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-
-<style>
-    body{
-        background-color: lightgray;
-    }
-</style>
-
 <body>
+    <div class="container">
+        <div>
+            <img src="assets/image.jpeg" alt="Shaunak Yevatekar" class="profile">
+        </div>
 
-    <div>
-    <img src="assets/image.jpeg" alt="Shaunak Yevatekar" class="profile">
-    </div>
+        <h2>Portfolio | Shaunak Yevatekar</h2>
 
-    <h2>
-       PORTFOILIO | SHAUNAK YEVATEKAR
-    </h2>
-    
-    <div>
-        <h2>
-            PROJECTS
-        </h2>
-        
-        <ul>
-            <li>
-                <a href="https://github.com/IamShaunak/Object-Locator">
-                    Object Locator — (INDIAN PATENT FILLED)
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    Electricity Grid Analysi sand Prediction—
-                    (INDIAN PATENT FILLED)
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    SmartParkingSystem
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    Realtime Price Comparison Of Food Delivery Apps
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    OneOnlinePlatformDevelopmentfor
-                    The67thNATIONALSCHOOLATHLETICS
-                    CHAMPIONSHIP2023-24
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    MedblocksaHealth-DAO
-                    (DecentralisedAutonomousOrganisation)
-                    WebDevelopment,Web3
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    SeizureAttackDetectionandPrediction
-                    IoT,WebDevelopment,DataScienc
-                </a>
+        <!-- Skills Section -->
+        <div class="skills-container">
+            <div class="skill-box">
+                <h3>Software Development</h3>
+            </div>
+            <div class="skill-box">
+                <h3>Data Analytics</h3>
+            </div>
+            <div class="skill-box">
+                <h3>Automation</h3>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div>
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <a href="https://github.com/IamShaunak/Object-Locator">
+                        Object Locator — (Indian Patent Filed)
+                    </a>
                 </li>
-            <li>
-                <a href="">
-                    Family Survey Portal for
-                    CMC(Chandrapur Municipal Corporation)
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    Crowd Funding Application using Cryptocurrency
-                    Web3, WebDevelopmen
-                </a>
-            </li>
-        </ul>
+                <li>
+                    <a href="">
+                        Electricity Grid Analysis and Prediction — (Indian Patent Filed)
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Smart Parking System
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Realtime Price Comparison Of Food Delivery Apps
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        One Online Platform Development for The 67th National School Athletics Championship 2023-24
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Medblocks - A Health-DAO (Decentralised Autonomous Organisation) - Web Development, Web3
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Seizure Attack Detection and Prediction - IoT, Web Development, Data Science
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Family Survey Portal for CMC (Chandrapur Municipal Corporation)
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Crowd Funding Application using Cryptocurrency - Web3, Web Development
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
