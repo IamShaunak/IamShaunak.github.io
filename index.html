@@ -8,19 +8,26 @@
             background-color: lightgray;
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0; /* Adjusted to 0 for full-width image */
+        }
+        .header {
+            width: 100%;
+            text-align: center;
+            background-color: #fff; /* Optional: white background for contrast */
+            padding-bottom: 20px;
+        }
+        .profile {
+            width: 100%; /* Full width */
+            height: 300px; /* Adjust height as needed */
+            object-fit: cover; /* Ensures image fills without distortion */
+            display: block;
+            margin: 0;
         }
         .container {
             max-width: 900px;
             margin: 0 auto;
+            padding: 20px;
             text-align: center;
-        }
-        .profile {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
         }
         h1, h2, h3 {
             color: #333;
@@ -42,6 +49,7 @@
             width: 28%;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             margin-bottom: 20px;
+            text-align: left; /* Align text left inside boxes */
         }
         ul {
             list-style-type: none;
@@ -61,14 +69,15 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <div>
-            <img src="assets/image.jpeg" alt="Shaunak Yevatekar" class="profile">
-            <h1>Shaunak Yevatekar</h1>
-            <p>shaunak@yevatekar.com | Pune, India</p>
-        </div>
+    <!-- Header with Full-Width Image -->
+    <div class="header">
+        <img src="assets/image.jpeg" alt="Shaunak Yevatekar" class="profile">
+        <h1>Shaunak Yevatekar</h1>
+        <p>shaunak@yevatekar.com | Pune, India</p>
+    </div>
 
+    <!-- Main Content -->
+    <div class="container">
         <!-- Skills -->
         <h2>Primary Skills</h2>
         <div class="skills-container">
@@ -76,25 +85,6 @@
             <div class="skill-box"><h3>Data Analytics</h3></div>
             <div class="skill-box"><h3>Automation</h3></div>
         </div>
-
-        <!-- Projects -->
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/IamShaunak/Object-Locator">Object Locator — (Indian Patent Filed)</a><br>IoT, Web Development (MCU, REST APIs, GSM Module)</li>
-            <li><a href="">Electricity Grid Analysis and Prediction — (Indian Patent Filed)</a><br>IoT, Web Development, Data Science (Electric Sensor Unit, NoSQL DB, XGBoost)</li>
-            <li><a href="">Smart Parking System</a><br>Image Processing (OpenCV, Numpy)</li>
-            <li><a href="">Realtime Price Comparison Of Food Delivery Apps</a><br>Web Scraping (Selenium)</li>
-        </ul>
-
-        <!-- Achievements -->
-        <h2>Achievements</h2>
-        <ul>
-            <li>1st Indian Patent Filed - 28th October 2023</li>
-            <li>2nd Indian Patent Filed - 24th May 2024</li>
-            <li>Live Project Deployed at Maha Metro Headquarters</li>
-            <li>1st Place, Smart India Hackathon, VIT Pune</li>
-            <li>Presented Research Paper at IEEE Sensor Applications Symposium 2023</li>
-        </ul>
 
         <!-- Experience -->
         <h2>Experience</h2>
@@ -110,6 +100,37 @@
                 <p>Developed and deployed projects using PHP, MySQL, JS.</p>
             </div>
         </div>
+
+        <!-- Projects -->
+        <h2>Projects</h2>
+        <div class="section">
+            <div class="info-box">
+                <h3><a href="https://github.com/IamShaunak/Object-Locator">Object Locator</a></h3>
+                <p>(Indian Patent Filed)<br>IoT, Web Development (MCU, REST APIs, GSM Module)</p>
+            </div>
+            <div class="info-box">
+                <h3><a href="">Electricity Grid Analysis and Prediction</a></h3>
+                <p>(Indian Patent Filed)<br>IoT, Web Development, Data Science (Electric Sensor Unit, NoSQL DB, XGBoost)</p>
+            </div>
+            <div class="info-box">
+                <h3><a href="">Smart Parking System</a></h3>
+                <p>Image Processing (OpenCV, Numpy)</p>
+            </div>
+            <div class="info-box">
+                <h3><a href="">Realtime Price Comparison Of Food Delivery Apps</a></h3>
+                <p>Web Scraping (Selenium)</p>
+            </div>
+        </div>
+
+        <!-- Achievements -->
+        <h2>Achievements</h2>
+        <ul>
+            <li>1st Indian Patent Filed - 28th October 2023</li>
+            <li>2nd Indian Patent Filed - 24th May 2024</li>
+            <li>Live Project Deployed at Maha Metro Headquarters</li>
+            <li>1st Place, Smart India Hackathon, VIT Pune</li>
+            <li>Presented Research Paper at IEEE Sensor Applications Symposium 2023</li>
+        </ul>
 
         <!-- Education -->
         <h2>Education</h2>
