@@ -11,7 +11,7 @@
             padding: 20px;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             text-align: center;
         }
@@ -22,22 +22,26 @@
             object-fit: cover;
             margin-bottom: 20px;
         }
-        h2 {
+        h1, h2, h3 {
             color: #333;
+        }
+        h2 {
             border-bottom: 2px solid #333;
             padding-bottom: 10px;
         }
-        .skills-container {
+        .skills-container, .section {
             display: flex;
             justify-content: space-around;
             margin: 20px 0;
+            flex-wrap: wrap;
         }
-        .skill-box {
+        .skill-box, .info-box {
             background-color: #fff;
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
-            width: 25%;
+            width: 28%;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
         }
         ul {
             list-style-type: none;
@@ -58,76 +62,80 @@
 </head>
 <body>
     <div class="container">
+        <!-- Header -->
         <div>
             <img src="assets/image.jpeg" alt="Shaunak Yevatekar" class="profile">
+            <h1>Shaunak Yevatekar</h1>
+            <p>shaunak@yevatekar.com | Pune, India</p>
         </div>
 
-        <h2>Portfolio | Shaunak Yevatekar</h2>
-
-        <!-- Skills Section -->
+        <!-- Skills -->
+        <h2>Primary Skills</h2>
         <div class="skills-container">
-            <div class="skill-box">
-                <h3>Software Development</h3>
+            <div class="skill-box"><h3>Software Development</h3></div>
+            <div class="skill-box"><h3>Data Analytics</h3></div>
+            <div class="skill-box"><h3>Automation</h3></div>
+        </div>
+
+        <!-- Projects -->
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="https://github.com/IamShaunak/Object-Locator">Object Locator — (Indian Patent Filed)</a><br>IoT, Web Development (MCU, REST APIs, GSM Module)</li>
+            <li><a href="">Electricity Grid Analysis and Prediction — (Indian Patent Filed)</a><br>IoT, Web Development, Data Science (Electric Sensor Unit, NoSQL DB, XGBoost)</li>
+            <li><a href="">Smart Parking System</a><br>Image Processing (OpenCV, Numpy)</li>
+            <li><a href="">Realtime Price Comparison Of Food Delivery Apps</a><br>Web Scraping (Selenium)</li>
+        </ul>
+
+        <!-- Achievements -->
+        <h2>Achievements</h2>
+        <ul>
+            <li>1st Indian Patent Filed - 28th October 2023</li>
+            <li>2nd Indian Patent Filed - 24th May 2024</li>
+            <li>Live Project Deployed at Maha Metro Headquarters</li>
+            <li>1st Place, Smart India Hackathon, VIT Pune</li>
+            <li>Presented Research Paper at IEEE Sensor Applications Symposium 2023</li>
+        </ul>
+
+        <!-- Experience -->
+        <h2>Experience</h2>
+        <div class="section">
+            <div class="info-box">
+                <h3>Information Technology Intern</h3>
+                <p>Maharashtra Metro Rail Corp Ltd.<br>July 2024 - Dec 2024, Pune</p>
+                <p>Built a cross-platform mobile app to manage meeting rush at HQ.</p>
             </div>
-            <div class="skill-box">
-                <h3>Data Analytics</h3>
-            </div>
-            <div class="skill-box">
-                <h3>Automation</h3>
+            <div class="info-box">
+                <h3>Research and Web Development Intern</h3>
+                <p>DSSWORLD Private Limited<br>Dec 2022 - June 2024, Pune</p>
+                <p>Developed and deployed projects using PHP, MySQL, JS.</p>
             </div>
         </div>
 
-        <!-- Projects Section -->
-        <div>
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <a href="https://github.com/IamShaunak/Object-Locator">
-                        Object Locator — (Indian Patent Filed)
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        Electricity Grid Analysis and Prediction — (Indian Patent Filed)
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        Smart Parking System
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        Realtime Price Comparison Of Food Delivery Apps
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        One Online Platform Development for The 67th National School Athletics Championship 2023-24
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        Medblocks - A Health-DAO (Decentralised Autonomous Organisation) - Web Development, Web3
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        Seizure Attack Detection and Prediction - IoT, Web Development, Data Science
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        Family Survey Portal for CMC (Chandrapur Municipal Corporation)
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        Crowd Funding Application using Cryptocurrency - Web3, Web Development
-                    </a>
-                </li>
-            </ul>
+        <!-- Education -->
+        <h2>Education</h2>
+        <div class="section">
+            <div class="info-box">
+                <h3>B.Tech Instrumentation and Control</h3>
+                <p>Vishwakarma Institute of Technology, Pune<br>2021 - 2025<br>CGPA: 8.37</p>
+            </div>
+            <div class="info-box">
+                <h3>HSC - 91.6%</h3>
+                <p>Rao Junior College of Science, Pune<br>2019 - 2021</p>
+            </div>
+            <div class="info-box">
+                <h3>SSC - 89%</h3>
+                <p>New India School Kothrud, Pune<br>2008 - 2019</p>
+            </div>
         </div>
+
+        <!-- Roles & Responsibilities -->
+        <h2>Roles & Responsibilities</h2>
+        <ul>
+            <li>Assistant Cultural Secretary - Viculp, VIT Pune</li>
+            <li>Public Relations Head - IEEE Instrumentation and Measurement Society, VIT Pune</li>
+            <li>Project Lead - International Society of Automation (ISA), VIT Pune</li>
+            <li>Club Head - Viculp, VIT Pune</li>
+        </ul>
     </div>
 </body>
 </html>
