@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shaunak Yevatekar | Portfolio</title>
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            position: relative; /* Allows absolute positioning of text */
+            width: 100%;
+            height: 300px; /* Adjust height as needed */
+        }
+        .profile {
+            width: 100%; /* Full width */
+            height: 100%; /* Fill the header height */
+            object-fit: cover; /* Ensures image covers without distortion */
+            display: block;
+        }
+        .header-text {
+            position: absolute; /* Overlay text on image */
+            top: 20px; /* Distance from top */
+            left: 20px; /* Distance from left */
+            color: #fff; /* White text for contrast */
+            /* text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);  */
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            color: #333;
+            margin: 0;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .skills-container, .section {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .skill-box, .info-box {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            width: 28%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Text Overlaid on Full-Width Image -->
+    <div class="header">
+        <img src="assets/image.jpeg" alt="Shaunak Yevatekar" class="profile">
+        <div class="header-text">
+            <h1>Shaunak Yevatekar</h1>
+            <p>shaunak@yevatekar.com | Pune, India</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Skills -->
+        <h2>Primary Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box"><h3>Software Development</h3></div>
+            <div class="skill-box"><h3>Data Analytics</h3></div>
+            <div class="skill-box"><h3>Automation</h3></div>
+        </div>
+
+        <!-- Experience -->
+        <h2>Experience</h2>
+        <div class="section">
+            <div class="info-box">
+                <h3>Information Technology Intern</h3>
+                <p>Maharashtra Metro Rail Corp Ltd.<br>July 2024 - Dec 2024, Pune</p>
+                <p>Built a cross-platform mobile app to manage meeting rush at HQ.</p>
+            </div>
+            <div class="info-box">
+                <h3>Research and Web Development Intern</h3>
+                <p>DSSWORLD Private Limited<br>Dec 2022 - June 2024, Pune</p>
+                <p>Developed and deployed projects using PHP, MySQL, JS.</p>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <h2>Projects</h2>
+        <div class="section">
+            <div class="info-box">
+                <h3><a href="https://github.com/IamShaunak/Object-Locator">Object Locator</a></h3>
+                <p>(Indian Patent Filed)<br>IoT, Web Development (MCU, REST APIs, GSM Module)</p>
+            </div>
+            <div class="info-box">
+                <h3><a href="">Electricity Grid Analysis and Prediction</a></h3>
+                <p>(Indian Patent Filed)<br>IoT, Web Development, Data Science (Electric Sensor Unit, NoSQL DB, XGBoost)</p>
+            </div>
+            <div class="info-box">
+                <h3><a href="">Smart Parking System</a></h3>
+                <p>Image Processing (OpenCV, Numpy)</p>
+            </div>
+            <div class="info-box">
+                <h3><a href="">Realtime Price Comparison Of Food Delivery Apps</a></h3>
+                <p>Web Scraping (Selenium)</p>
+            </div>
+        </div>
+
+        <!-- Achievements -->
+        <h2>Achievements</h2>
+        <ul>
+            <li>1st Indian Patent Filed - 28th October 2023</li>
+            <li>2nd Indian Patent Filed - 24th May 2024</li>
+            <li>Live Project Deployed at Maha Metro Headquarters</li>
+            <li>1st Place, Smart India Hackathon, VIT Pune</li>
+            <li>Presented Research Paper at IEEE Sensor Applications Symposium 2023</li>
+        </ul>
+
+        <!-- Education -->
+        <h2>Education</h2>
+        <div class="section">
+            <div class="info-box">
+                <h3>B.Tech Instrumentation and Control</h3>
+                <p>Vishwakarma Institute of Technology, Pune<br>2021 - 2025<br>CGPA: 8.37</p>
+            </div>
+            <div class="info-box">
+                <h3>HSC - 91.6%</h3>
+                <p>Rao Junior College of Science, Pune<br>2019 - 2021</p>
+            </div>
+            <div class="info-box">
+                <h3>SSC - 89%</h3>
+                <p>New India School Kothrud, Pune<br>2008 - 2019</p>
+            </div>
+        </div>
+
+        <!-- Roles & Responsibilities -->
+        <h2>Roles & Responsibilities</h2>
+        <ul>
+            <li>Assistant Cultural Secretary - Viculp, VIT Pune</li>
+            <li>Public Relations Head - IEEE Instrumentation and Measurement Society, VIT Pune</li>
+            <li>Project Lead - International Society of Automation (ISA), VIT Pune</li>
+            <li>Club Head - Viculp, VIT Pune</li>
+        </ul>
+    </div>
+</body>
+</html>
